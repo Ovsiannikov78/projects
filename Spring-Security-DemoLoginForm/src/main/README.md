@@ -10,17 +10,17 @@
 
 ![](screenshots/Spring-Security-LoginForm.png)
 
-## Limited access depending on the role - ADMIN
+## ==========>>> Limited access depending on the role - ADMIN <<<==========
 
 ![](screenshots/Limited_access_depending_on_the_role_admin.png)
 
 ![](screenshots/Limited_access_depending_on_the_role_admin_1.png)
 
-## Limited access depending on the role - MANAGER
+## ==========>>> Limited access depending on the role - MANAGER <<<==========
 
 ![](screenshots/Limited_access_depending_on_the_role_manager.png)
 
-## Limited access depending on the role - EMPLOYEE
+## ==========>>> Limited access depending on the role - EMPLOYEE <<<==========
 
 ![](screenshots/Limited_access_depending_on_the_role_employee.png)
 
