@@ -9,8 +9,13 @@
 
 
 ![](screenshots/Spring-Security-LoginForm.png)
+
 ![](screenshots/Limited_access_depending_on_the_role_admin.png)
+
 ![](screenshots/Limited_access_depending_on_the_role_admin_1.png)
+
 ![](screenshots/Limited_access_depending_on_the_role_manager.png)
+
 ![](screenshots/Limited_access_depending_on_the_role_employee.png)
+
 ![](screenshots/Demo-App-LoginForm-with-SpringSecurity-DatabaseSchema.png)
