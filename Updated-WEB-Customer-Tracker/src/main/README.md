@@ -1,5 +1,16 @@
 # I learned from this project how to ...
 ---
+## Technologies used:
+- Java
+- SpringBoot
+- SpringJPA
+- Maven
+- MySQL
+- IntelliJ IDEA
+- TomCat
+- HTML5
+- CSS
+
 ![](screenshots/login_form.png)
 
 
