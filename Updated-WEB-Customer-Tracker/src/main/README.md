@@ -1,1 +1,6 @@
 ![](screenshots/login_form.png)
+![](screenshots/Invalid_registration_details.png)
+![](screenshots/successful_logout.png)
+![](screenshots/User_with_full_access_rights.png)
+![](screenshots/User_without_deletion_rights.png)
+![](screenshots/User_with_view_only_access.png)
