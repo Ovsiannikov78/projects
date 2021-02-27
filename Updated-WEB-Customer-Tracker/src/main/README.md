@@ -10,6 +10,7 @@
 - TomCat
 - HTML5
 - CSS
+- Thymeleaf
 
 ![](screenshots/login_form.png)
 
