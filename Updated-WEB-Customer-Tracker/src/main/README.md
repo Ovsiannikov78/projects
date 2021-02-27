@@ -37,6 +37,8 @@ This app makes use of JDBC Authentication with encrypted passwords.
 *****
 ![](screenshots/User_with_full_access_rights.png)
 *****
+![](screenshots/Add_employee.png)
+*****
 ## Manager role
 *****
 ![](screenshots/User_without_deletion_rights.png)
