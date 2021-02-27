@@ -8,7 +8,7 @@
 
 ![](screenshots/successful_logout.png)
 
-## Role employee-admin - full access rights.  Can update, delete and add a new employee.
+### Role employee-admin - full access rights.  Can update, delete and add a new employee.
 
 ![](screenshots/User_with_full_access_rights.png)
 
