@@ -46,3 +46,5 @@ This app makes use of JDBC Authentication with encrypted passwords.
 ## Employee role
 *****
 ![](screenshots/User_with_view_only_access.png)
+*****
+![](screenshots/Access_denied.png)
