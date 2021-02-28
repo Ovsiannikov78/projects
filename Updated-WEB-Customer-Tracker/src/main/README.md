@@ -47,6 +47,6 @@ This app makes use of JDBC Authentication with encrypted passwords.
 *****
 ![](screenshots/User_with_view_only_access.png)
 *****
-### When a user tries to add an employee without having rights to do so, we get the following message
+### When a user with the Employee role tries to add an employee without having rights to do so, we get the following message
 *****
 ![](screenshots/Access_denied.png)
