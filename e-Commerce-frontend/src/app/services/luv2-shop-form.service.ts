@@ -69,11 +69,11 @@ export class Luv2ShopFormService {
 interface GetResponseCountries {
   _embedded: {
     countries: Country[];
-  }
+  };
 }
 
 interface GetResponseStates {
   _embedded: {
     states: State[];
-  }
+  };
 }

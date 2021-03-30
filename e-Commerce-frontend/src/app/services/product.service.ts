@@ -87,11 +87,11 @@ interface GetResponseProducts {
     totalElements: number,
     totalPages: number,
     number: number
-  }
+  };
 }
 
 interface GetResponseProductCategory {
   _embedded: {
     productCategory: ProductCategory[];
-  }
+  };
 }
