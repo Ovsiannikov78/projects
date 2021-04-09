@@ -23,7 +23,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-        // use jdbc authentication ... oh yeah!!!
+        // use jdbc authentication
         auth.jdbcAuthentication().dataSource(securityDataSource);
 
     }
