@@ -16,9 +16,9 @@
       # I have a couple of questions for this part
       When I search for Giga Berlin on the Wikipedia page
       Then I see the Giga Berlin page
-      Then I see Coordinates of the location
-      Then I see Logistics data
-      Then I see Site concerns data
+      And I see Coordinates of the location
+      And I see Logistics data
+      And I see Site concerns data
 
       When I click on the mini map on the Giga Berlin page
       Then I see the Google Map page with Giga Berlin location

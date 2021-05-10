@@ -1,6 +1,7 @@
 package gigaberlin.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -32,12 +33,8 @@ public class GigaBerlinPage {
         return $(coordinates);
     }
 
-    public SelenideElement logisticsEl() {
-        return $(logistics);
-    }
-
-    public SelenideElement siteConcernsEl() {
-        return $(siteConcerns);
+    public SelenideElement textLinkEl(String textLink) {
+        return $(By.xpath("//span[contains(.,'" + textLink + "')]"));
     }
 
     public GoogleMapPage clickMiniMap() {

@@ -19,7 +19,6 @@ public class GigaBerlinSteps implements En {
             googlePage = page(GooglePage.class);
             googleWikiPage = googlePage.searchForWikipediaPage(searchText);
         });
-
         Then("I see the Google search result page", () -> {
             googleWikiPage.onTheGoogleSearchPage().should();
         });
@@ -44,15 +43,13 @@ public class GigaBerlinSteps implements En {
         Then("I see the Giga Berlin page", () -> {
             gigaBerlinPage.onTheGigaBerlinPage().should(have(text("Giga Berlin")));
         });
-        Then("I see Coordinates of the location", () -> {
+        And("I see Coordinates of the location", () -> {
             gigaBerlinPage.coordinatesEl().should(have(text("52.4°N 13.8°E")));
         });
-        Then("I see Logistics data", () -> {
-            gigaBerlinPage.logisticsEl().should(have(text("Logistics")));
+        And("I see {} data", (String dataText) -> {
+            gigaBerlinPage.textLinkEl(dataText).should(have(text(dataText)));
         });
-        Then("I see Site concerns data", () -> {
-            gigaBerlinPage.siteConcernsEl().should(have(text("Site concerns")));
-        });
+
 
 
         When("I click on the mini map on the Giga Berlin page", () -> {
