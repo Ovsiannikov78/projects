@@ -9,26 +9,28 @@
 - Mockito
 - JUnit
 ### Spring 
-- Spring MVC
-- Spring AOP
-- Spring Security
 - Spring Boot
 - Spring Data JPA
 - Spring Data REST
+- Spring MVC
+- Spring AOP
+- Spring Security
 *****
 ## Frontend part;
+- Angular 11
+- TypeScript
 - HTML-5
 - CSS
 - JavaScript
 - Bootstrap
-- TypeScript
-- Angular
 ******
 ## Others;
-- GitHub;
-- Maven;
+- Apache Kafka
+- Maven
+- Gradle
 - IntelliJ IDEA;
-- Postman;
 - Tomcat
+- Selenium 
+- Cucumber
 
 
