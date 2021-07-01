@@ -18,6 +18,15 @@ export class StatisticsBarChartComponent implements OnInit {
 
   barChartOptions: ChartOptions = {
     responsive: true,
+    scales: {
+      xAxes: [
+        {
+          ticks: {
+            beginAtZero: true
+          }
+        }
+      ]
+    }
   };
 
   barChartLabels: Array<any> = [];
