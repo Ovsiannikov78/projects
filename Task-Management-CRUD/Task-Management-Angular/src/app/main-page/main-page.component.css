@@ -1,0 +1,19 @@
+th{
+  background-color: lightsteelblue;
+  border: 1px solid darkgray;
+
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}

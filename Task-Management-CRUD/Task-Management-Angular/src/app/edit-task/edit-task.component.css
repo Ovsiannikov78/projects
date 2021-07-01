@@ -1,0 +1,30 @@
+#save {
+  margin-right: 2em;
+}
+
+h3 {
+  text-align: center;
+  background-color: lightblue;
+}
+
+label {
+  margin-top: 2em;
+  font-style: normal;
+  font-family: Helvetica, serif;
+  font-size: large;
+}
+
+input {
+  margin-top: 1em;
+  border-color: dimgray;
+}
+
+textarea {
+  margin-top: 1em;
+  border-color: dimgray;
+}
+
+form {
+  background-color: floralwhite;
+}
+
