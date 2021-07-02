@@ -4,14 +4,6 @@ import java.time.LocalDateTime;
 
 public class LocalDatePrototype {
 
-    /*public static LocalDateTime weekBefore() {
-        return LocalDateTime.of(2021,6,15,12,0,0);
-    }
-
-    public static LocalDateTime yesterday() {
-        return LocalDateTime.of(2021,6,21,12,0,0);
-    }*/
-
     public static LocalDateTime dateInThePast() {
         return LocalDateTime.of(2020,6,15,12,0,0);
     }
