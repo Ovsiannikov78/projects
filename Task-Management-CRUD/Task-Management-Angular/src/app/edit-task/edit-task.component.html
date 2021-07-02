@@ -1,0 +1,30 @@
+<h3 class="rounded-2 col offset-sm-4 col-sm-4 col offset-sm-4">Update Task</h3>
+<div *ngIf="task">
+  <form class="text-center border border-dark p-3 rounded-3 col offset-sm-2 col-sm-8 col offset-sm-2" [formGroup]="form" (ngSubmit)="onSave()">
+
+    <div class="form-group">
+      <label for="task_name">Name:</label>
+      <input type="text" [value]="task.name" id="task_name" class="form-control mb-4" disabled>
+    </div>
+
+    <div class="form-group">
+      <label for="task_description">Description:</label>
+      <textarea formControlName="taskDescription" class="form-control rounded-2" id="task_description"
+                rows="3" placeholder="Description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="task_due_date">Due Date:</label>
+      <input type="datetime-local" formControlName="dueDate" id="task_due_date"
+             class="form-control mb-4" placeholder="Due Date">
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <button type="submit" id="save" class="btn btn-info col-2" [disabled]="form.invalid">Save</button>
+        <button id="cancel" class="btn btn-info col-2" (click)="onCancel()">Cancel</button>
+      </div>
+    </div>
+  </form>
+
+</div>
