@@ -1,0 +1,62 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+version: '3'
+
+#Define services
+services:
+  db:
+    image: mysql
+    container_name: db
+    environment:
+        MYSQL_DATABASE: task-management
+        MYSQL_USER: sergi
+        MYSQL_PASSWORD: 1111
+    ports:
+      - 3306:3306
+
+  #Volume mounted for database for the storage
+    volumes:
+      - task-management:/var/lib/mysql
+    networks:
+      - backendNetwork
+
+
+
+  #Back-end Spring Boot Application
+  task-management-app:
+    image: adoptopenjdk/openjdk11
+    container_name: task-management-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/task-management?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&serverTimezone=UTC
+
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    volumes:
+      - /Users/sergiiovsiannikov/Desktop/tel_ran_10/projects/Task-Management-CRUD/Task-Management-SpringBoot/target/Task-Management-SpringBoot-0.0.1-SNAPSHOT.jar:/application.jar
+    command: [ "java", "-jar", "application.jar" ]
+    networks:
+      - backendNetwork
+      - frontendNetwork
+
+  #Front-end Angular Application
+  angular:
+    image: nginx:alpine
+    container_name: angular
+    ports:
+      - 4200:80
+    depends_on:
+      - task-management-app
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./Task-Management-Angular/dist/Task-Management-Angular/:/usr/share/nginx/html
+    networks:
+      - frontendNetwork
+
+#Volumes for DB data
+volumes:
+  task-management:
+
+networks:
+  backendNetwork:
+  frontendNetwork:
