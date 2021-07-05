@@ -6,6 +6,10 @@ import static de.ovsiannikov.taskmanagementspringboot.prototype.LocalDatePrototy
 
 public class TaskPrototype {
 
+    public static Task taskWithoutName(){
+        return new Task(null, "Learn Angular", inAWeek());
+    }
+
     public static Task taskWithInvalidDate(){ return new Task("Let's do this" ,"Create an app", dateInThePast());}
 
     public static Task taskFromUser(){

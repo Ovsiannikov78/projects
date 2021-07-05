@@ -59,9 +59,28 @@ class TaskControllerTest {
 
     @Test
     void create_with_wrong_dueDate() throws Exception {
+        when(taskService.create(
+                taskDtoFromFrontEnd().getName(),
+                taskDtoFromFrontEnd().getDescription(),
+                taskDtoFromFrontEnd().getDueDate()))
+                .thenThrow(new RuntimeException());
         mockMvc.perform(post("/api/tasks")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(taskWithInvalidDate())))
+                .andDo(print())
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    void create_with_empty_name() throws Exception {
+        when(taskService.create(
+                taskWithoutName().getName(),
+                taskWithoutName().getDescription(),
+                taskWithoutName().getDueDate()))
+                .thenThrow(new RuntimeException());
+        mockMvc.perform(post("/api/tasks")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(taskWithoutName())))
                 .andDo(print())
                 .andExpect(status().isBadRequest());
     }
