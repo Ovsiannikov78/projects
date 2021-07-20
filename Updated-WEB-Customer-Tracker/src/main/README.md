@@ -1,7 +1,6 @@
 # I learned from this project ...
 
-As part of the Udemy course - "Spring & Hibernate for Beginners (includes Spring Boot)" develop a fully working app with 
-Spring Boot, Spring Data JPA, Spring Security (JDBC) and Thymeleaf, that talks to the MySQL database.
+As part of the Udemy course - "Spring & Hibernate for Beginners (includes Spring Boot)" develop a fully working app with Spring Boot, Spring Data JPA, Spring Security (JDBC) and Thymeleaf with connection to the MySQL database.
 ******
 Built Customer Relationship Management System, which allow track customers and with ability 
 add new customers, update, delete and also list all the customers to the database and display content 
