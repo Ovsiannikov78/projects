@@ -21,7 +21,7 @@
       <tr *ngFor="let task of tasks">
         <td>{{ task.name}}</td>
         <td>{{ task.description}}</td>
-        <td>{{task.dueDate}}</td>
+        <td>{{task.dueDate | date: 'medium': null: 'en-DE'}}</td>
 
         <td>
           <a routerLink="/task/{{task.id}}/edit" class="btn-md btn btn-info">Update</a>

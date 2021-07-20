@@ -9,6 +9,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { EditTaskComponent } from './edit-task/edit-task.component';
 import {MainPageComponent} from './main-page/main-page.component';
 import {AppRoutingModule} from './app-routing.module';
+import {registerLocaleData} from '@angular/common';
+import deLocale from '@angular/common/locales/en-DE';
+
+registerLocaleData(deLocale, 'en-DE');
 
 @NgModule({
   declarations: [
